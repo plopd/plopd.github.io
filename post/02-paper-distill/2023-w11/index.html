@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en"><head>
+    <title>Reward-respecting subtasks</title>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+        </script>
+</head>
+<body>
+</body>
+</html>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <script defer data-domain="plopd.github.io" src="https://plausible.io/js/script.js"></script>
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/custom.min.css">
+    
+
+    
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar0.png"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        Daniel T. Plop
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Computer scientist
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Blog">Blog</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../booklist/readlist/" title="Reading List">Reading List</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://github.com/plopd" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+        </script>
+</head>
+<body>
+</body>
+</html>
+
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Reward-respecting subtasks</h3>
+            
+            <small class="text-muted">Published March 26, 2023</small>
+        </div>
+
+        <article>
+            <h4 id="reward-respecting-subtasks-for-model-based-reinforcement-learning-2022-1">Reward-Respecting Subtasks for Model-Based Reinforcement Learning, 2022 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h4>
+<ul>
+<li><strong>TL;DR</strong>: Subtasks that are defined to explicitly serve the main reward signal lead to more efficient planning.</li>
+</ul>
+<h5 id="overview">Overview</h5>
+<p>This paper focuses on demonstrating the effectiveness of (main) reward-respecting subtasks<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> for better planning. It is well known that for an agent to act effectively in its environment, it should not only learn directly from experience, but also strive to learn a model of the environment and the possible consequences of its actions. This model must be abstract in state and time because of the immense number of possible states and actions that can exist. An action might be buying a plane ticket or attending a meeting. This paper focuses on how to create and use environment models that are abstract in time.</p>
+<p>The most common way to define temporally-extended ways of behaving in reinforcement learning (RL) is through <em>options</em>. An option is essentially a way of behaving and a way of stopping. As you can imagine, even the number of possible options is enormous. So there has to be a way to narrow down the space of possible candidates. This problem is known as option discovery. In a recent line of research, methods have been proposed that define <em>subtasks</em> whose solutions are options. The number of subtasks can then constrain the number of options. A subtask is an intermediate subgoal state that is advantageous to achieve as part of the main goal. Most commonly subtasks are defined to maximize some signal other than the main reward. This paper focuses on defining subtasks that explicitly maximize the original reward plus some bonus. The bonus value function is one of the novel developments in the paper.</p>
+<p>First, let&rsquo;s see how subtasks are defined in this paper. A subtask is defined as maximizing a state feature vector value, also known as <em>feature attainment</em>. The bonus is defined by a stopping-value function which is composed of the  value estimate of the state stopped in and a bonus weight for the state feature being maximized. Specifically, for state $s$, state feature vector $\mathbf{x}(s)$, weight vector $\mathbf{w}$, <em>pre-defined</em> bonus weight $\bar{w}{i}$ for feature $i$, the stopping-value function equals:</p>
+<p>$$z^{i}(s) \doteq \hat{v}(\mathbf{x}(s), \mathbf{w}) + x_i(s)(\bar{w}^{i} - w_i)~~~\text{(1)}$$</p>
+<p>Notice the first summand in $\text{Eq. 1}$ is simply the value estimate of the current state that approximates the expected cumulative sum of (discounted) rewards &ndash; the main task of an RL agent. Here, $\hat{v}(\mathbf{x}(s), \mathbf{w}) \doteq \mathbf{w}^{\top}\mathbf{x}(s)$, that is, the estimated state-value function is linear in the state feature-vector<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Without loss of generality, the paper assumes at most one subtask per feature $i$. Given a subtask, an option attempts to solve it, i.e. to achieve a high value for that feature, while also taking care of the main reward collected along the way (as dictated by the first summand in $\text{Eq. 1}$). The option is defined to stop whenever the bonus stopping value $z$ is greater than or equal to the value estimate of the current state it is in.</p>
+<p>The paper specifies a complete agent that can learn temporally-extended behavior through the well-known STOMP progression. STOMP stands for SubTask, Option, Model, and Planning, and is used in this paper as follows:</p>
+<ul>
+<li>SubTask
+<ul>
+<li>The primary task is to maximize the expected sum of cumulative discounted rewards on a per-episode basis.</li>
+<li>Subtasks, totaling the number of state features, are defined to attain a high value for the corresponding feature.</li>
+</ul>
+</li>
+<li>Option
+<ul>
+<li>Given a subtask, feature attainment is attempted by learning an option in an online, off-policy manner using standard actor-critical algorithms.</li>
+</ul>
+</li>
+<li>Model
+<ul>
+<li>For each option, an environment transition and reward model is learned. For the state transition, expectation models are used for computational efficiency. They are defined to be linear in the state feature vector.</li>
+</ul>
+</li>
+<li>Planning
+<ul>
+<li>The values of the state feature vectors are updated sequentially in any order using the learned options through Approximated Value Iteration (AVI).</li>
+</ul>
+</li>
+</ul>
+<p>Note that a subtask is formally defined as a general value function (GVF). A GVF is defined by a cumulant function $c$, a stopping function $\beta$, and a stopping bonus function $z$. The policy $\pi$ and $\beta$ defines the option of the GVF. The objective is to find the option that maximizes the cumulant (here, it is the main reward plus the stopping bonus value described in $\text{Eq. 1}$). The primary task is also a GVF, where the cumulant is the main reward signal and stopping happens only in the terminal state. All subtasks are computed independently and possibly in parallel, depending on the available computing resources. They all receive the reward scalar signal and individually try to maximize the corresponding state feature vector component. Also, in this paper, the state feature vector function responsible for constructing the agent state (an approximation of the agent&rsquo;s interaction with the environment up to its present) is known, but in general it is assumed that the agent can construct a non-Markov agent state.</p>
+<h5 id="remarks">Remarks</h5>
+<ul>
+<li>Reward-respecting subtasks constrain the immense space of possible options in a principled way by subordinating the reward signal. What other principled ways are there to further constrain this space in order to improve option discovery?</li>
+<li>The paper seamlessly incorporates reward-respecting subtasks into the well-established STOMP progression using existing online, off-policy control algorithms and GVFs.</li>
+<li>Interestingly, the stopping bonus weight leads to the discovery of <em>different</em> options.</li>
+<li>In the Four Rooms problem, the agent successfully learned three options, but struggled with the fourth. Overall planning performance was not affected, but what are the cases where options get in the way of planning? What are their characteristics?</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Sutton, R. S., Machado, M. C., Holland, G. Z., Timbers, D. S. F., Tanner, B., &amp; White, A. (2022). Reward-respecting subtasks for model-based reinforcement learning. arXiv preprint arXiv:2202.03466.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>In my view, choosing reward-respecting subtasks is so obvious if it is true, and there is growing evidence to support this, that a single scalar reward is sufficient to exhibit all kinds of intelligent behavior found in nature (see Reward-Is-Enough<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and Reward Hypothesis<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>). If this scalar signal is so important in the face of a demanding complex environment, then among the vast number of options, the agent will surely choose those that primarily maximize reward.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>The state feature vector $\mathbf{x}(s)$ <em>can</em> be computed by a nonlinear function such as a neural network.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Silver, D., Singh, S., Precup, D., &amp; Sutton, R. S. (2021). Reward is enough. Artificial Intelligence, 299, 103535.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Bowling, M., Martin, J. D., Abel, D., &amp; Dabney, W. (2022). Settling the Reward Hypothesis. arXiv preprint arXiv:2212.10420.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+        </article>
+    </div>
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+        and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+        theme from <a href="https://github.com/austingebauer/devise" target="_blank">A. Gebauer.</a>
+    </small>
+</footer>
+</body>
+</html>

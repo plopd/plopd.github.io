@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mind in the Machine</title>
+    <link>https://plopd.github.io/post/</link>
+    <description>Recent content in Posts on Mind in the Machine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://plopd.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reward-respecting subtasks</title>
+      <link>https://plopd.github.io/post/02-paper-distill/2023-w11/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://plopd.github.io/post/02-paper-distill/2023-w11/</guid>
+      <description>Reward-Respecting Subtasks for Model-Based Reinforcement Learning, 2022 1 TL;DR: Subtasks that are defined to explicitly serve the main reward signal lead to more efficient planning. Overview This paper focuses on demonstrating the effectiveness of (main) reward-respecting subtasks2 for better planning. It is well known that for an agent to act effectively in its environment, it should not only learn directly from experience, but also strive to learn a model of the environment and the possible consequences of its actions.</description>
+    </item>
+    
+    <item>
+      <title>ViT</title>
+      <link>https://plopd.github.io/post/02-paper-distill/2023-w09/</link>
+      <pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://plopd.github.io/post/02-paper-distill/2023-w09/</guid>
+      <description>Vision Transformers (ViT), 2020 Overview This week I took a closer look at the ViT paper which contains some interesting experiments on how learning in the Transformer model scales with increasing computer power and data 1.
+The paper experiments with applying the Transformer model to images, making as few changes as possible to the original architecture. The authors are interested in whether a Transformer can learn more computationally efficient inductive biases that might otherwise be designed into the network architecture itself.</description>
+    </item>
+    
+    <item>
+      <title>A Simple Case of Supervised Online Learning</title>
+      <link>https://plopd.github.io/post/01-online-rl/online-learning/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://plopd.github.io/post/01-online-rl/online-learning/</guid>
+      <description>In this paper, we consider the supervised version of online learning. Specifically, we try to predict the label of handwritten digits, from the MNIST dataset, in images in an online fashion. The samples arrive one by one, and the training is performed immediately afterwards.
+We evaluate three online methods, namely
+Incremental: the learner performs a single learning update at each time step in a fully incremental manner, with no samples stored.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head>
+    <title>&#39;When is Prediction Knowledge?&#39; paper</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <script defer data-domain="plopd.github.io" src="https://plausible.io/js/script.js"></script>
+
+    
+    
+    
+    <link rel="stylesheet" href="../../css/theme.min.css">
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="../../css/custom.min.css">
+    
+
+    
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../images/avatar0.png"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+                    
+                        Daniel T. Plop
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Computer scientist
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Blog">Blog</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../booklist/readlist/" title="Reading List">Reading List</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://github.com/plopd" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-3 ml-sm-5">
+        <h3 id="notes">Notes</h3>
+<p>The motivation given in the paper <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> for representing machine knowledge as predictions is to give the agent the ability to construct its own world knowledge of the world, and not to depend on an external designer.</p>
+<p>If we consider that the only thing an agent can control is its own stream of experience coming in from the world, then knowledge can be constructed from <em>sensations</em> about that stream, the agent&rsquo;s past and subsequent <em>behavior</em> of having taken an action, and <em>time</em>.</p>
+<p>General Value Functions (GVFs) extend value functions by generalizing a single scalar <em>reward</em> signal to <em>any</em> signal, called a cumulant. Note that this does not interfere with the main goal of reinforcement learning, which is to maximize the cumulative sum of rewards. These cumulants are linked to the reward that serves their maximization.</p>
+<p>A prediction can be defined as a linear combination of the weights that parameterize the GVF and the agent state features of an observation. The <em>question parameters</em> are the weights of the GVF, the discount function, an action taken from a policy, and the policy itself describing the behavior followed. The <em>answer parameters</em>, such as the step size and the decay rate of the fitness trace, specify how the prediction is learned through the optimization process.</p>
+<p>The take-home message of the paper <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> is that a prediction can be accurate (e.g., in response error) but not useful. In the experiment, two different predictions are learned. Both are specified by the same GVF, and the only difference between them is the feature approximation used to construct the agent-state feature. Given a signal (or stimulus) of interest, one prediction learns to track the signal on a moment-by-moment basis, while the other learns to anticipate <em>the change</em> in the stimulus, increasing just before the stimulus is about to rise, and conversely decreasing just before the stimulus is about to fall.</p>
+<p>The first prediction is accurate, in terms of return error, but not as useful as the second prediction, which learns to predict the signal of interest. Most would agree that the second prediction is more <em>useful</em> to an agent that wants to control its environment through adaptive behavior.</p>
+<p>So, with so many predictions that an agent can make to build world knowledge, it is important to evaluate the usefulness of the prediction not only in terms of its accuracy, but also in terms of its usefulness for taking better actions.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Kearney, A., &amp; Pilarski, P. M. (2019). When is a Prediction Knowledge?. arXiv preprint arXiv:1904.09024.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+        and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+        theme from <a href="https://github.com/austingebauer/devise" target="_blank">A. Gebauer.</a>
+    </small>
+</footer>
+</body>
+</html>
