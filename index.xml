@@ -6,7 +6,17 @@
     <description>Recent content on Mind in the Machine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://plopd.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://plopd.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some Notes on Recent Developments of Emphatic Temporal Differences Methods and Emphatic Weightings</title>
+      <link>https://plopd.github.io/post/emphatic/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://plopd.github.io/post/emphatic/</guid>
+      <description>I have recently read some of the work that has been done on emphatic temporal-differences (ETD) methods, and more generally on the use of emphatic weightings. Below I briefly summarize my understanding of the authors&amp;rsquo; findings, and offer some of my own opinions where I think they are appropriate.
+ETD methods have been proposed to address the long-standing problem of instability of off-policy temporal-differences (TD) methods under linear function approximation (Sutton, Mahmood, and White 2016 1).</description>
+    </item>
+    
     <item>
       <title>Reward-respecting subtasks</title>
       <link>https://plopd.github.io/post/02-paper-distill/respect-reward/</link>
