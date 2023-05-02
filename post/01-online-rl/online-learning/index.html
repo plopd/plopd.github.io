@@ -151,11 +151,22 @@
 <li><strong>Full-Batch (idealistic)</strong>: the learner keeps a <em>running</em> buffer of samples encountered so far and performs learning updates based on all samples accumulated so far. Thus, the learner will eventually have accumulated all the samples it has been given.</li>
 </ul>
 <p><img src="../../../post/01-online-rl/fig1.png" alt=""></p>
-<p>*Figure 1: The Incremental algorithm is the slowest and least accurate, and the Full-Batch algorithm dominates both the Incremental and Mini-Batch algorithms in accuracy and speed. All experiments were performed for 30 independent runs with seeds from 1 to 30. For the average performance (right panel), the standard error x 2.5 is plotted on both sides of the mean.</p>
+<p>*Figure 1: The Incremental algorithm is the slowest and least accurate, and the Full-Batch algorithm dominates both the Incremental and Mini-Batch algorithms in accuracy and speed. All experiments were performed for 30 independent runs with seeds from 1 to 30. For the average performance (right panel), the standard error $\times 2.5$ is plotted on both sides of the mean.</p>
 <p>In the experiment, each algorithm was initialized with a particular weight vector and then run for 60,000 steps. The whole thing was then repeated for 30 runs. The random seed was initialized to the same value for all three algorithms at the beginning of each group of 30 runs. For each run, the accuracy over the last 1000 steps was recorded and averaged over the runs to generate the learning curves shown in Figure 1. The variance in the learning curves of each algorithm comes from the initial weight vector and the order of presentation of the samples.</p>
-<p>We can see that the idealistic algorithm, which uses all samples up to the current time step to perform a learning update, dominates both the Incremental and Mini-Batch algorithms in terms of accuracy and speed. Furthermore, the worst performing algorithm is the Incremental learner, which only looks at the current sample and makes an update based on it. One thing that makes this algorithm different from the others is that it tries to squeeze the most out of the current timestep, rather than storing past samples and reusing them later.</p>
-<p>The learner&rsquo;s decision whether to focus on the current sample and squeeze as much learning out of it as possible, or to not pay full attention to the current timestep and store the sample for later reuse, is an important tradeoff in online fully incremental RL.</p>
-<p>This preliminary experiment was designed to shed some light on the attention trade-off: paying full attention to the current timestep versus replaying past experience.</p>
+<p>We can see that the idealistic algorithm, which uses all samples up to the current time step to perform a learning update, dominates both the incremental and mini-Batch algorithms in terms of accuracy and speed. Furthermore, the worst performing algorithm is the incremental learner, which only looks at the current sample and makes an update based on it. One thing that makes this algorithm special from the others is that it tries to squeeze the most out of the example presented at the current timestep, rather than storing past examples and reusing them later.</p>
+<p>An important dilemma that is not often explicitly discussed is</p>
+<blockquote>
+<p>the tradeoff between paying as much attention as possible to the current timestep versus differing learning fully from the current example and storing it for later reuse.</p>
+</blockquote>
+<p>Perhaps we should call it the <em>Attention</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> dilemma, since at each timestep the learner has to decide how much attention to pay to the current example or to store it for later reuse, thereby paying less attention to it <em>now</em>.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Not to be confused with the attention mechanism implemented in Transformer neural networks.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
         </article>
     </div>
