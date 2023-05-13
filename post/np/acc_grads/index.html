@@ -143,10 +143,10 @@
         </div>
 
         <article>
-            <p>I came across <code>np.add.at</code> recently and found out that it is a very powerful <a href="https://numpy.org/doc/stable/reference/generated/numpy.ufunc.at.html#numpy.ufunc.at">NumPy method</a> if you want to accumulate values at specific indices. Consider the following example, where you want to embed some inputs in a D-dimensional vector space and compute the gradients of the weight matrix that projects these inputs into that space:</p>
+            <p>I came across <code>np.add.at</code> recently and found out that it is a very powerful <a href="https://numpy.org/doc/stable/reference/generated/numpy.ufunc.at.html#numpy.ufunc.at">NumPy method</a> if you want to accumulate values at specific indices. Consider the following example, where you want to embed some inputs in a D-dimensional vector space and compute the gradients of the embedding weight matrix:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">...</span>
-</span></span><span style="display:flex;"><span>dW <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros((C, D))  <span style="color:#75715e"># tensor storing the gradients of the projection matrix `W`.</span>
-</span></span><span style="display:flex;"><span>dout<span style="color:#f92672">.</span>shape <span style="color:#f92672">=</span> (N, T, D) <span style="color:#75715e"># upstream gradients of some embedded sequences. </span>
+</span></span><span style="display:flex;"><span>dW <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros((C, D))  <span style="color:#75715e"># tensor storing the gradients of the embedding matrix `W`.</span>
+</span></span><span style="display:flex;"><span>dout<span style="color:#f92672">.</span>shape <span style="color:#f92672">=</span> (N, T, D) <span style="color:#75715e"># upstream gradients of some embedded input sequences. </span>
 </span></span><span style="display:flex;"><span>X<span style="color:#f92672">.</span>shape <span style="color:#f92672">=</span> (N, T)       <span style="color:#75715e"># input sequences of length `T` stored as row-indices of the embedding matrix `W`.</span>
 </span></span></code></pre></div><p>The following line accumulates gradients at specific indices.
 It takes three arguments: the target array <code>dW</code>, the indices array <code>X</code>, and the source array <code>dout</code>.</p>

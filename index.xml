@@ -13,8 +13,8 @@
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://plopd.github.io/post/np/acc_grads/</guid>
-      <description>I came across np.add.at recently and found out that it is a very powerful NumPy method if you want to accumulate values at specific indices. Consider the following example, where you want to embed some inputs in a D-dimensional vector space and compute the gradients of the weight matrix that projects these inputs into that space:
-... dW = np.zeros((C, D)) # tensor storing the gradients of the projection matrix `W`.</description>
+      <description>I came across np.add.at recently and found out that it is a very powerful NumPy method if you want to accumulate values at specific indices. Consider the following example, where you want to embed some inputs in a D-dimensional vector space and compute the gradients of the embedding weight matrix:
+... dW = np.zeros((C, D)) # tensor storing the gradients of the embedding matrix `W`. dout.shape = (N, T, D) # upstream gradients of some embedded input sequences.</description>
     </item>
     
     <item>
