@@ -236,7 +236,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n_samples):
 </span></span><span style="display:flex;"><span>    state, loss_val <span style="color:#f92672">=</span> train_step(state, x_samples[i], y_samples[i])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># reset moments</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Reset moments:</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 1. flatten</span>
 </span></span><span style="display:flex;"><span>    flat_mu <span style="color:#f92672">=</span> traverse_util<span style="color:#f92672">.</span>flatten_dict(state<span style="color:#f92672">.</span>opt_state[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>mu, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>)
 </span></span><span style="display:flex;"><span>    flat_nu <span style="color:#f92672">=</span> traverse_util<span style="color:#f92672">.</span>flatten_dict(state<span style="color:#f92672">.</span>opt_state[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>nu, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>)
@@ -252,10 +252,12 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># update moments optimizer</span>
 </span></span><span style="display:flex;"><span>    new_opt_state <span style="color:#f92672">=</span> (state<span style="color:#f92672">.</span>opt_state[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>_replace(
 </span></span><span style="display:flex;"><span>        mu<span style="color:#f92672">=</span>new_mu, nu<span style="color:#f92672">=</span>new_nu), ) <span style="color:#f92672">+</span> state<span style="color:#f92672">.</span>opt_state[<span style="color:#ae81ff">1</span>:]
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    state <span style="color:#f92672">=</span> state<span style="color:#f92672">.</span>replace(opt_state<span style="color:#f92672">=</span>new_opt_state)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># book-keeping</span>
 </span></span><span style="display:flex;"><span>    losses<span style="color:#f92672">.</span>append(loss_val)
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># log loss averaged over last 100 examples</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
 </span></span><span style="display:flex;"><span>        print(
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;Step: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">:&#39;</span><span style="color:#f92672">.</span>format(i), <span style="color:#e6db74">&#39;Avg. loss (last 100): </span><span style="color:#e6db74">{:.4f}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(
