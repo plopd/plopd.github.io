@@ -6,7 +6,16 @@
     <description>Recent content on Mind in the Machine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://plopd.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://plopd.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://plopd.github.io/booklist/fastslow/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://plopd.github.io/booklist/fastslow/</guid>
+      <description>It is incredible that, even with the best of intentions, we may not realise the fallacies of our thinking until we carefully review them afterwards &amp;ndash; emotions &amp;ldquo;interfere&amp;rdquo;. System 1 (fast and intuitive) and System 2 (slow and meticulous) are part of the human mind. But how did they form? What was in the beginning? How should we think about these two systems when we design the computational mind? Is it the case that they are part of a whole, with more of System 1 in the beginning and more computational resources gradually being allocated to System 2?</description>
+    </item>
+    
     <item>
       <title>Reinitializing the moments of the optimizer during learning (Jax)</title>
       <link>https://plopd.github.io/post/jax/reinit_moments_opt/</link>
