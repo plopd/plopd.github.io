@@ -18,27 +18,5 @@ Although people claim that these models learn by self-monitoring, they actually 
 Let&amp;rsquo;s take the example of GPT-3, which learns from a huge corpus of text from the Internet. The model learns to predict the next word in sequence by recycling this corpus many times, and after some time it can accurately predict the next word, so it seems to have gained understanding and knowledge about the world.</description>
     </item>
     
-    <item>
-      <title>&#39;When is Prediction Knowledge?&#39; paper</title>
-      <link>https://plopd.github.io/research/predictions/</link>
-      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://plopd.github.io/research/predictions/</guid>
-      <description>Notes The motivation given in the paper 1 for representing machine knowledge as predictions is to give the agent the ability to construct its own world knowledge of the world, and not to depend on an external designer.
-If we consider that the only thing an agent can control is its own stream of experience coming in from the world, then knowledge can be constructed from sensations about that stream, the agent&amp;rsquo;s past and subsequent behavior of having taken an action, and time.</description>
-    </item>
-    
-    <item>
-      <title>Gato</title>
-      <link>https://plopd.github.io/research/gato/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://plopd.github.io/research/gato/</guid>
-      <description>Notes The agent is trained using supervised learning, not reinforcement learning:
-For simplicity, Gato was trained offline in a purely supervised fashion; however, in principle, there is no reason why it could not be trained with either offline or online reinforcement learning (RL).
-And it does require some &amp;ldquo;divine intervention&amp;rdquo; after it has finished training and is deployed to tackle new tasks:
-To adapt the agent to new tasks or behaviors, we choose to fine-tune the agent&amp;rsquo;s parameters on a limited number of demonstrations of a single task, and then evaluate the fine-tuned model&amp;rsquo;s performance in the environment.</description>
-    </item>
-    
   </channel>
 </rss>
