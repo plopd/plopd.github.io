@@ -56,27 +56,5 @@ TL;DR: Subtasks that are defined to explicitly serve the main reward signal lead
 The paper experiments with applying the Transformer model to images, making as few changes as possible to the original architecture. The authors are interested in whether a Transformer can learn more computationally efficient inductive biases that might otherwise be designed into the network architecture itself.</description>
     </item>
     
-    <item>
-      <title>A Simple Case of Supervised Online Learning</title>
-      <link>https://plopd.github.io/post/01-online-rl/online-learning/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://plopd.github.io/post/01-online-rl/online-learning/</guid>
-      <description>In this paper, we consider the supervised version of online learning. Specifically, we try to predict the label of handwritten digits, from the MNIST dataset, in images in an online fashion. The samples arrive one by one, and the training is performed immediately afterwards.
-We evaluate three online methods, namely
-Incremental: the learner performs a single learning update at each time step in a fully incremental manner, with no samples stored.</description>
-    </item>
-    
-    <item>
-      <title>On the Importance of the Agent-Environment Interaction for Better Understanding the World</title>
-      <link>https://plopd.github.io/research/thoughts-on-data/</link>
-      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://plopd.github.io/research/thoughts-on-data/</guid>
-      <description>Recent developments in natural language processing (NLP) &amp;amp; natural language understanding (NLU) 1 and image generation 2 have generated a lot of excitement and well-deserved enthusiasm. But&amp;hellip;
-Although people claim that these models learn by self-monitoring, they actually learn from human labeled data, which makes them supervised learning methods. Why is that?
-Let&amp;rsquo;s take the example of GPT-3, which learns from a huge corpus of text from the Internet. The model learns to predict the next word in sequence by recycling this corpus many times, and after some time it can accurately predict the next word, so it seems to have gained understanding and knowledge about the world.</description>
-    </item>
-    
   </channel>
 </rss>
