@@ -37,16 +37,6 @@ ETD methods have been proposed to address the long-standing problem of instabili
     </item>
     
     <item>
-      <title>Reward-respecting subtasks (notes)</title>
-      <link>https://plopd.github.io/post/02-paper-distill/respect-reward/</link>
-      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://plopd.github.io/post/02-paper-distill/respect-reward/</guid>
-      <description>In this post, I review the paper Reward-respecting subtasks for model-based reinforcement learning by Sutton, R. S., Machado, M. C., Holland, G. Z., Timbers, D. S. F., Tanner, B., &amp;amp; White, A. (2022) 1.
-TL;DR: Subtasks that are defined to explicitly serve the main reward signal lead to more efficient planning. Overview This paper focuses on demonstrating the effectiveness of (main) reward-respecting subtasks2 for better planning. It is well known that for an agent to act effectively in its environment, it should not only learn directly from experience, but also strive to learn a model of the environment and the possible consequences of its actions.</description>
-    </item>
-    
-    <item>
       <title>ViT</title>
       <link>https://plopd.github.io/post/02-paper-distill/vit/</link>
       <pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate>
